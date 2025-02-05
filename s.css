@@ -1,0 +1,98 @@
+body {
+    background-color: #f8e0f0;  /* لون خلفية فاتح زهري */
+    color: #ec09b3;  /* لون نص داكن قريب من البنفسجي */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.container {
+    max-width: 400px;
+    margin: auto;
+    background: #fff0f5;  /* لون خلفية وردي فاتح */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(255, 105, 180, 0.2);  /* تأثير ظل وردي خفيف */
+    
+}
+
+input {
+    width: 90%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    background-color: #ffe4e1;  /* لون خلفية مدخلات بلون زهري فاتح */
+    border: 1px solid #ff69b4;  /* تحديد الحدود بلون زهري فاتح */
+    border-radius: 8px;
+    color: #ec09b3;  /* نص داخل الحقول بلون داكن */
+    transition: background-color 0.3s ease-in-out;
+}
+
+input:focus {
+    background-color: #ffb6c1;  /* تغيير الخلفية عند التركيز إلى وردي فاتح */
+    border-color: #ff1493;  /* تغيير لون الحدود عند التركيز إلى وردي دافئ */
+    outline: none;
+    
+}
+
+button {
+    background-color: #ff69b4;  /* لون الزر الزهري */
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+button:hover {
+    background-color: #ff1493;  /* تغيير اللون عند التمرير على الزر */
+}
+
+button:focus {
+    outline: none;
+    display: none;
+}
+
+#charts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+    
+}
+
+.chart-box {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 400px; 
+    height: 300px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#user-info {
+    background: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    font-size: 16px;
+    color: #ec09b3;  /* لون نص زهري داكن */
+    max-width: 80%; /* جعل العرض أصغر */
+    margin-left: auto;  
+    margin-right: auto; /* توسيطه داخل الـ container */
+}
+/*  */

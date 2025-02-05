@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="s.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns"></script>
+</head>
+<body>
+    <div id="login-box" class="container">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <input type="password" id="password" placeholder="Password">
+        <button class="bubbly-button" onclick="login()">Sign In</button>
+        
+        <p id="error-msg" style="color: red;"></p>
+    </div>
+    
+    <div id="profile-box" >
+        <h2 id="welcome-msg" ></h2>
+        <div id="user-info" ></div>
+        <div id="charts-container">
+            <div class="chart-box">
+                <canvas id="skillPieChart" width="200" height="200"></canvas>
+            </div>
+            <div class="chart-box">
+                <canvas id="xplineChart" width="200" height="200"></canvas>
+            </div>
+        </div>
+    
+        
+
+        <button class="bubbly-button" onclick="logout()">Log Out</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
